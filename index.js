@@ -29,8 +29,8 @@ async function run() {
         app.get('/product/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) };
-            const product = await productCollection.findOne(query);
-            res.send(product);
+            const result = await productCollection.findOne(query);
+            res.send(result);
         })
 
         app.post('/product', async (req, res) => {
@@ -39,21 +39,38 @@ async function run() {
             res.send(result);
         })
 
+        app.put('/product/:id', async (req, res) => {
+            const id = req.params.id;
+            const updatedProduct = req.body;
+            const filter = { _id: ObjectId(id) };
+            const options = { upsert: true };
+            const updatedDoc = {
+                $set: {
+                    price: updatedProduct.price,
+                    stock: updatedProduct.stock,
+                    email: updatedProduct.email,
+                    img: updatedProduct.img,
+                }
+            };
+            const result = await productCollection.updateOne(filter, updatedDoc, options);
+            res.send(result);
+
+
+        })
+
         app.delete('/product/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) };
             const result = await productCollection.deleteOne(query);
             res.send(result);
         })
+
     }
     finally {
 
     }
 }
 run().catch(console.dir);
-
-
-
 
 app.get('/', (req, res) => {
     res.send('running istore server');
