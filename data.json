@@ -1,0 +1,56 @@
+[
+  {
+    "name": "iPhone 13 Pro",
+    "price": 1200,
+    "stock": 152,
+    "img": "https://images.unsplash.com/photo-1632560354926-21886c0e811c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "description": "(128GB) Display Type Super Retina XDR OLED 120Hz HDR10Dolby Vision 1000 nits (HBM) 1200 nits peak. Main Camera Quad 12 MP, f/1.5, 26mm (wide), 1.9µm, dual pixel PDAF, sensor-shift OIS 12 MP, f/2.8, 77mm (telephoto), PDAF, OIS, 3x optical zoom 12 MP, f/1.8, 13mm, 120˚ (ultrawide), PDAF TOF 3D LiDAR scanner (depth)",
+    "supplier": "apple",
+    "email": "tareksabbir4599@gmail.com"
+  },
+  {
+    "name": "iPhone 13",
+    "price": 1000,
+    "stock": 102,
+    "img": "https://images.unsplash.com/photo-1640437830866-d5da33f66a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+    "description": " Display Type Super Retina XDR OLED, HDR10, Dolby Vision, 800 nits (HBM), 1200 nits (peak) .Main Camera Quad 12 MP, f/1.5, 26mm (wide), 1.9µm, dual pixel PDAF, sensor-shift OIS 12 MP, f/2.8, 77mm (telephoto), PDAF, OIS, 3x optical zoom 12 MP, f/1.8, 13mm, 120˚ (ultrawide), PDAF TOF 3D LiDAR scanner (depth)",
+    "supplier": "apple",
+    "email": "tareksabbir4599@gmail.com"
+  },
+  {
+    "name": "iPhone 12",
+    "price": 900,
+    "stock": 100,
+    "img": "https://images.unsplash.com/photo-1611740677496-3e0ef378e189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=740&q=80",
+    "description": "Display Type Super Retina XDR OLED, HDR10, 625 nits (typ), 1200 nits (peak). Camera Dual 12 MP, f/1.6, 26mm (wide), 1.4µm, dual pixel PDAF, OIS 12 MP, f/2.4, 120˚, 13mm (ultrawide), 1/3.6",
+    "supplier": "apple",
+    "email": "tareksabbir4599@gmail.com"
+  },
+  {
+    "name": "iPhone 12 mini",
+    "price": 800,
+    "stock": 92,
+    "img": "https://images.unsplash.com/photo-1605546960121-24e957eb8c15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80",
+    "description": "Display Type Super Retina XDR OLED, HDR10, 625 nits (typ), 1200 nits (peak).CPU Hexa-core (2x3.1 GHz Firestorm + 4x1.8 GHz Icestorm).Camera Dual 12 MP, f/2.2, 23mm (wide), 1/3.6 SL 3D, (depth/biometrics sensor",
+    "supplier": "apple",
+    "email": "tareksabbir4599@gmail.com"
+  },
+  {
+    "name": "iPhone Xs",
+    "price": 560,
+    "stock": 62,
+    "img": "https://images.unsplash.com/photo-1592821266573-4c773cfc5507?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=677&q=80",
+    "description": "Liquid Retina IPS LCD, 625 nits (HBM) 6.1 inches 128GB 3GB RAM camera 12 MP, f/1.8, 26mm (wide), 1/2.55, 1.4µm, PDAF, OIS Li-Ion 2942 mAh, non-removable (11.16 Wh) Fast charging 15W, 50% in 30 min Black, Red, Yellow, Blue, Coral, White",
+    "supplier": "apple",
+    "email": "tareksabbir4599@gmail.com"
+  },
+  {
+    "name": "iPhone SE",
+    "price": 400,
+    "stock": 100,
+    "img": "https://images.unsplash.com/photo-1611120159972-050e0fbb7ab4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "description": "Type Retina IPS LCD capacitive touchscreen, 16M colors Size 4.7 inches, 60.9 cm2 (~65.4% screen-to-body ratio) Resolution 750 x 1334 pixels, 16:9 ratio (~326 ppi density) Protection Ion-strengthened glass, oleophobic coating Wide color gamut True-tone 625 nits max brightness (advertised)",
+    "supplier": "apple",
+    "email": "tareksabbir4599@gmail.com"
+  }
+]
