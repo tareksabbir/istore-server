@@ -2,7 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const ObjectId = require('mongodb').ObjectId;
-
+const res = require('express/lib/response');
+const jwt = require('jsonwebtoken');
 
 require('dotenv').config()
 const app = express();
@@ -10,6 +11,15 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
+
+function verifyJWT(req, res, next) {
+    const authHeader = req.headers.authorization;
+    if (!authHeader) {
+        return
+    }
+    console.log(authHeader);
+    next();
+}
 
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.th5av.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
@@ -19,6 +29,15 @@ async function run() {
     try {
         await client.connect();
         const productCollection = client.db('iStore').collection('product');
+
+        app.post('/login', async (req, res) => {
+            const user = req.body;
+            const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
+                expiresIn: '1d'
+            })
+            res.send({ accessToken });
+
+        })
 
         app.get('/product', async (req, res) => {
             const query = {};
